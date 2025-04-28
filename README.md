@@ -115,3 +115,12 @@ var beautified = beautifyWithWords(backboneSource, { b: { bracketize: true } });
 
 console.log(beautified);
 ```
+
+```
+ node ./bin/beautify-with-words  sample.es5.js -o sample-beautified.js
+```
+
+
+```
+babel sample-es6.js -o sample.es5.js     
+```

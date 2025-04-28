@@ -9,7 +9,7 @@
     "pretty"
   ],
   "homepage": "https://github.com/zertosh/beautify-with-words",
-  "main": "./beautify-with-words.js",
+  "main": "./bin/beautify-with-words",
   "bin": {
     "beautify-with-words": "bin/beautify-with-words"
   },
@@ -21,11 +21,12 @@
     "url": "git://github.com/zertosh/beautify-with-words.git"
   },
   "dependencies": {
-    "uglify-js": "~2.4.11",
+    "optimist": "~0.6.0",
     "phonetic": "~0.1.0",
-    "optimist": "~0.6.0"
+    "uglify-js": "~2.4.11"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.26.9",
     "mocha": "~1.17.1",
     "should": "~3.1.2"
   },

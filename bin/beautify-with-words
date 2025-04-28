@@ -2,7 +2,7 @@
 'use strict';
 
 var fs = require('fs');
-var beautifyWithWords = require('../');
+var beautifyWithWords = require('../beautify-with-words');
 
 var argv = require('optimist')
   .usage('Beautify javascript with unique \"long-ish words\" for variable names.\n' +
@@ -39,7 +39,7 @@ if (argv._.length === 0) {
     contents = fs.readFileSync(argv._[0], { encoding: 'utf8' });
     processContents(contents);
   } catch(e) {
-    console.error('Failed to open file "%s."', argv._[0]);
+    console.error('Failed to open file "%s."', argv._[0],e);
     process.exit(1);
   }
 }

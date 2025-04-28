@@ -1,0 +1,1 @@
+let o=5+10;console.log(`Hello, World! The sum of 5 and 10 is ${o}.`);const l=[1,2,3,4,5].map((o=>2*o));console.log(l);
