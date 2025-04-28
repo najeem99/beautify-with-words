@@ -1,3 +1,8 @@
+
+# Project Title
+
+A brief description of what this project does and who it's for
+
 beautify-with-words
 ===================
 
@@ -115,11 +120,14 @@ var beautified = beautifyWithWords(backboneSource, { b: { bracketize: true } });
 
 console.log(beautified);
 ```
+### To Run the file locally after cloning ###
 
 ```
  node ./bin/beautify-with-words  sample.es5.js -o sample-beautified.js
 ```
 
+### Convert ES6 to ES5 ###
+This package supports only ES5 syntax ,so we use babel to convert es6 to es5 syntax
 
 ```
 babel sample-es6.js -o sample.es5.js     
